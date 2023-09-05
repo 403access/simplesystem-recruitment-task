@@ -1,47 +1,29 @@
-# Example app with Storybook
+# Simple System - Recruitment Task
 
-This example shows a default set up of Storybook using [storybook-addon-next](https://github.com/RyanClementsHax/storybook-addon-next). Included in this example are stories that demonstrate the ability to use Next.js features in Storybook.
+This repository is created as a proof of skill and thus is the first step within [**Simple System**](https://simplesystem.com)'s recruitment process.
 
-### TypeScript
+## 🛠️ Tech Stack
 
-As of v6.0, Storybook has built-in TypeScript support, so no configuration is needed. If you want to customize the default configuration, refer to the [TypeScript docs](https://storybook.js.org/docs/react/configure/typescript).
+- **Frontend**
+    - [Next.js](https://nextjs.org)
+- **Tools (Type Safety)**
+    - [TypeScript](https://www.typescriptlang.org)
+- **Tools (UI)**
+    - [Storybook](https://storybook.js.org)
+- **Tools (Testing)**
+    - [Jest](https://jestjs.io)
+    - [Cypress](https://www.cypress.io)
+- **Deployment**
+    - [Vercel](https://vercel.com)
 
-## Deploy your own
+## 📢 Shoutout
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-storybook)
+Hey Simple System 👋
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-storybook&project-name=with-storybook&repository-name=with-storybook)
+Have fun looking at the best submission 🚀
 
-## How to use
+PS: Don't take it too seriously. I am joking ... or not? 🤪
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-storybook with-storybook-app
-```
-
-```bash
-yarn create next-app --example with-storybook with-storybook-app
-```
-
-```bash
-pnpm create next-app --example with-storybook with-storybook-app
-```
-
-### Run Storybook
-
-```bash
-npm run storybook
-# or
-yarn storybook
-```
-
-### Build Static Storybook
-
-```bash
-npm run build-storybook
-# or
-yarn build-storybook
-```
-
-You can use [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) to deploy Storybook. Specify `storybook-static` as the output directory.
+## ℹ References
+- https://vercel.com/guides/storybook-with-vercel
+- https://github.com/vercel/next.js/tree/canary/examples/with-storybook

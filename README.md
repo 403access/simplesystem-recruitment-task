@@ -16,7 +16,7 @@ This repository is created as a proof of skill and thus is the first step within
 - **Deployment**
     - [Vercel](https://vercel.com)
 
-## Notes
+## 📝 Notes
 - While working on this task a bug in Vercel's documentation was discovered and reported:
     [Deploying Storybook with Vercel - Wrong npx serve command #3947](https://github.com/orgs/vercel/discussions/394)
 

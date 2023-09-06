@@ -1,0 +1,23 @@
+.accordion {
+  width: 100%;
+}
+.accordion-header {
+  padding: 16px;
+
+  border: 1px solid #000000;
+
+  background-color: #eee;
+
+  color: #000000;
+}
+
+.accordion-title {
+}
+
+.accordion-expander {
+  float: right;
+}
+
+.accordion-content {
+  padding-left: 24px;
+}

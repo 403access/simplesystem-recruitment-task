@@ -38,3 +38,5 @@ PS: Don't take it too seriously. I am joking ... or not? 🤪
 - https://github.com/vercel/next.js/tree/canary/examples/with-storybook
 - https://github.com/vercel/turbo/tree/main/examples/design-system
 - https://stackoverflow.com/questions/66011598/styled-jsx-typescript-error-after-migrating-to-monorepo-structure-property-jsx
+- https://stackoverflow.com/questions/66137368/next-js-environment-variables-are-undefined-next-js-10-0-5
+- https://github.com/vercel/next.js/discussions/35773#discussioncomment-6522487

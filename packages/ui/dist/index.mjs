@@ -46,14 +46,11 @@ var Button = (_a) => {
   const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
   return /* @__PURE__ */ createElement("button", __spreadValues({
     type: "button",
-    className: ["storybook-button", `storybook-button--${size}`, mode].join(" ")
-  }, props), label, /* @__PURE__ */ createElement("style", {
-    jsx: "true"
-  }, `
-        button {
-          background-color: ${backgroundColor};
-        }
-      `));
+    className: ["storybook-button", `storybook-button--${size}`, mode].join(" "),
+    style: {
+      backgroundColor
+    }
+  }, props), label);
 };
 export {
   Button

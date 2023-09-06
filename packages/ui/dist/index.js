@@ -70,14 +70,11 @@ var Button = (_a) => {
   const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
   return /* @__PURE__ */ React.createElement("button", __spreadValues({
     type: "button",
-    className: ["storybook-button", `storybook-button--${size}`, mode].join(" ")
-  }, props), label, /* @__PURE__ */ React.createElement("style", {
-    jsx: "true"
-  }, `
-        button {
-          background-color: ${backgroundColor};
-        }
-      `));
+    className: ["storybook-button", `storybook-button--${size}`, mode].join(" "),
+    style: {
+      backgroundColor
+    }
+  }, props), label);
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

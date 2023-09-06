@@ -10,9 +10,10 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "run-s bundle copy-css",
+    "build": "run-s bundle copy-css copy-css-storybook",
     "bundle": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "copy-css": "copyfiles --all --up 1 \"src/**/*.css\" dist",
+    "copy-css-storybook": "copyfiles --all --up 1 \"src/**/*.css\" ../../apps/storybook/ui",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint src/",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"

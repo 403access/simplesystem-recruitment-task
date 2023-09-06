@@ -72,7 +72,7 @@ var Button = (_a) => {
     type: "button",
     className: ["storybook-button", `storybook-button--${size}`, mode].join(" ")
   }, props), label, /* @__PURE__ */ React.createElement("style", {
-    jsx: true
+    jsx: "true"
   }, `
         button {
           background-color: ${backgroundColor};

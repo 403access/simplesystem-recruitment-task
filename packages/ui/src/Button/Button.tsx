@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import "./Button.css";
-
 export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
@@ -47,7 +45,8 @@ export const Button = ({
       {...props}
     >
       {label}
-      <style jsx>{`
+      {/* @ts-ignore */}
+      <style jsx="true">{`
         button {
           background-color: ${backgroundColor};
         }

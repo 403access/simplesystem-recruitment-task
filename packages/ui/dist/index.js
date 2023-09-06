@@ -50,7 +50,11 @@ var __toModule = (module2) => {
 
 // src/index.tsx
 __export(exports, {
-  Button: () => Button
+  Accordion: () => Accordion,
+  Button: () => Button,
+  Input: () => Input,
+  RepositoryView: () => RepositoryView,
+  Separator: () => Separator
 });
 
 // src/Button/Button.tsx
@@ -76,7 +80,74 @@ var Button = (_a) => {
     }
   }, props), label);
 };
+
+// src/Accordion/Accordion.tsx
+var import_react = __toModule(require("react"));
+var Accordion = ({ title, children, onClick }) => {
+  const [isOpen, setIsOpen] = (0, import_react.useState)(false);
+  return /* @__PURE__ */ import_react.default.createElement("div", {
+    className: "accordion"
+  }, /* @__PURE__ */ import_react.default.createElement("div", {
+    className: "accordion-header"
+  }, /* @__PURE__ */ import_react.default.createElement("span", {
+    className: "accordion-title"
+  }, title), /* @__PURE__ */ import_react.default.createElement("span", {
+    className: "accordion-expander",
+    onClick: () => {
+      const newIsOpen = !isOpen;
+      setIsOpen(newIsOpen);
+      onClick == null ? void 0 : onClick(newIsOpen);
+    }
+  }, isOpen === true ? "\u{1F53C}" : "\u{1F53D}")), isOpen && /* @__PURE__ */ import_react.default.createElement("div", {
+    className: "accordion-content"
+  }, children));
+};
+
+// src/Separator/Separator.tsx
+var import_react2 = __toModule(require("react"));
+var Separator = ({ kind, size }) => {
+  return /* @__PURE__ */ import_react2.default.createElement("div", {
+    style: {
+      width: kind === "horizontal" ? size : "1px",
+      height: kind === "vertical" ? size : "1px"
+    }
+  });
+};
+
+// src/Input/Input.tsx
+var import_react3 = __toModule(require("react"));
+var Input = ({ placeholder, value, onChange }) => {
+  return /* @__PURE__ */ import_react3.default.createElement("input", {
+    className: "input",
+    type: "text",
+    placeholder,
+    value,
+    onChange: (e) => onChange(e.target.value)
+  });
+};
+
+// src/RepositoryView/RepositoryView.tsx
+var import_react4 = __toModule(require("react"));
+var RepositoryView = ({ repository }) => {
+  return /* @__PURE__ */ import_react4.default.createElement("div", {
+    className: "repository"
+  }, /* @__PURE__ */ import_react4.default.createElement("div", {
+    className: "repository-header"
+  }, /* @__PURE__ */ import_react4.default.createElement("span", {
+    className: "repository-header-name"
+  }, repository.name), /* @__PURE__ */ import_react4.default.createElement("span", {
+    className: "repository-header-star"
+  }, "\u2B50"), /* @__PURE__ */ import_react4.default.createElement("span", {
+    className: "repository-header-stars"
+  }, repository.stars)), /* @__PURE__ */ import_react4.default.createElement("div", {
+    className: "repository-content"
+  }, repository.description));
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Button
+  Accordion,
+  Button,
+  Input,
+  RepositoryView,
+  Separator
 });

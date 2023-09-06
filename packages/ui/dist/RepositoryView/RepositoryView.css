@@ -1,0 +1,23 @@
+.repository {
+  padding: 8px;
+
+  border: 1px solid #000000;
+
+  background-color: #eee;
+
+  color: #000;
+}
+.repository-header {
+}
+.repository-header-name {
+  font-weight: bold;
+}
+.repository-header-stars {
+  float: right;
+}
+.repository-header-star {
+  float: right;
+}
+
+.repository-content {
+}

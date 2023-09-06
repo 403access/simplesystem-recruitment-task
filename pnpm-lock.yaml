@@ -41,6 +41,9 @@ importers:
       typescript:
         specifier: 5.0.4
         version: 5.0.4
+      ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
     devDependencies:
       '@storybook/addon-essentials':
         specifier: ^7.4.0

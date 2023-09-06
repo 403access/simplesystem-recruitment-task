@@ -1,11 +1,28 @@
-import * as React from 'react';
-
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    children: React.ReactNode;
+interface ButtonProps {
+    /**
+     * Is this the principal call to action on the page?
+     */
+    primary?: boolean;
+    /**
+     * What background color to use
+     */
+    backgroundColor?: string;
+    /**
+     * How large should the button be?
+     */
+    size?: "small" | "medium" | "large";
+    /**
+     * Button contents
+     */
+    label: string;
+    /**
+     * Optional click handler
+     */
+    onClick?: () => void;
 }
-declare function Button({ children, ...other }: ButtonProps): JSX.Element;
-declare namespace Button {
-    var displayName: string;
-}
+/**
+ * Primary UI component for user interaction
+ */
+declare const Button: ({ primary, size, backgroundColor, label, ...props }: ButtonProps) => JSX.Element;
 
 export { Button, ButtonProps };

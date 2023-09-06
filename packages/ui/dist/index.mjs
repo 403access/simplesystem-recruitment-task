@@ -27,17 +27,34 @@ var __objRest = (source, exclude) => {
   return target;
 };
 
-// src/button.tsx
+// src/Button/Button.tsx
 import {
   createElement
 } from "react";
-function Button(_a) {
-  var _b = _a, { children } = _b, other = __objRest(_b, ["children"]);
+var Button = (_a) => {
+  var _b = _a, {
+    primary = false,
+    size = "medium",
+    backgroundColor,
+    label
+  } = _b, props = __objRest(_b, [
+    "primary",
+    "size",
+    "backgroundColor",
+    "label"
+  ]);
+  const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
   return /* @__PURE__ */ createElement("button", __spreadValues({
-    type: "button"
-  }, other), children);
-}
-Button.displayName = "Button";
+    type: "button",
+    className: ["storybook-button", `storybook-button--${size}`, mode].join(" ")
+  }, props), label, /* @__PURE__ */ createElement("style", {
+    jsx: true
+  }, `
+        button {
+          background-color: ${backgroundColor};
+        }
+      `));
+};
 export {
   Button
 };

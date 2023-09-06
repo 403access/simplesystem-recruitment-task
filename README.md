@@ -37,3 +37,4 @@ PS: Don't take it too seriously. I am joking ... or not? 🤪
 - https://vercel.com/guides/storybook-with-vercel
 - https://github.com/vercel/next.js/tree/canary/examples/with-storybook
 - https://github.com/vercel/turbo/tree/main/examples/design-system
+- https://stackoverflow.com/questions/66011598/styled-jsx-typescript-error-after-migrating-to-monorepo-structure-property-jsx

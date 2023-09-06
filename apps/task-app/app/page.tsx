@@ -7,5 +7,5 @@ import { Button } from "ui";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <main className={styles.main}><Button>test</Button></main>;
+  return <main className={styles.main}><Button label="test"/></main>;
 }

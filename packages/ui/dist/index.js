@@ -53,15 +53,32 @@ __export(exports, {
   Button: () => Button
 });
 
-// src/button.tsx
+// src/Button/Button.tsx
 var React = __toModule(require("react"));
-function Button(_a) {
-  var _b = _a, { children } = _b, other = __objRest(_b, ["children"]);
+var Button = (_a) => {
+  var _b = _a, {
+    primary = false,
+    size = "medium",
+    backgroundColor,
+    label
+  } = _b, props = __objRest(_b, [
+    "primary",
+    "size",
+    "backgroundColor",
+    "label"
+  ]);
+  const mode = primary ? "storybook-button--primary" : "storybook-button--secondary";
   return /* @__PURE__ */ React.createElement("button", __spreadValues({
-    type: "button"
-  }, other), children);
-}
-Button.displayName = "Button";
+    type: "button",
+    className: ["storybook-button", `storybook-button--${size}`, mode].join(" ")
+  }, props), label, /* @__PURE__ */ React.createElement("style", {
+    jsx: true
+  }, `
+        button {
+          background-color: ${backgroundColor};
+        }
+      `));
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Button

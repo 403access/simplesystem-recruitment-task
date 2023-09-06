@@ -6,6 +6,8 @@ This repository is created as a proof of skill and thus is the first step within
 
 - **Frontend**
     - [Next.js](https://nextjs.org)
+- **Tools (Turbo)**
+    - [Turbo](https://turbo.build/repo)
 - **Tools (Type Safety)**
     - [TypeScript](https://www.typescriptlang.org)
 - **Tools (UI)**
@@ -15,6 +17,9 @@ This repository is created as a proof of skill and thus is the first step within
     - [Cypress](https://www.cypress.io)
 - **Deployment**
     - [Vercel](https://vercel.com)
+
+## 🚢 Deployment
+- In Vercel set the `Root Directory` to `apps/task-app`.
 
 ## 📝 Notes
 - While working on this task a bug in Vercel's documentation was discovered and reported:
@@ -31,3 +36,5 @@ PS: Don't take it too seriously. I am joking ... or not? 🤪
 ## ℹ References
 - https://vercel.com/guides/storybook-with-vercel
 - https://github.com/vercel/next.js/tree/canary/examples/with-storybook
+- https://github.com/vercel/turbo/tree/main/examples/design-system
+- https://stackoverflow.com/questions/66011598/styled-jsx-typescript-error-after-migrating-to-monorepo-structure-property-jsx
